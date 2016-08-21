@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+
+   <groupId>nl.w00f</groupId>
+   <artifactId>mancala</artifactId>
+   <version>1.0-SNAPSHOT</version>
+   <build>
+      <plugins>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+               <source>1.8</source>
+               <target>1.8</target>
+            </configuration>
+         </plugin>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <configuration>
+               <finalName>mandala</finalName>
+               <archive>
+                  <manifest>
+                     <addClasspath>true</addClasspath>
+                     <mainClass>nl.w00f.App</mainClass>
+                  </manifest>
+               </archive>
+            </configuration>
+         </plugin>
+      </plugins>
+
+   </build>
+   <dependencies>
+      <dependency>
+         <groupId>junit</groupId>
+         <artifactId>junit</artifactId>
+         <version>4.12</version>
+      </dependency>
+
+   </dependencies>
+   <packaging>jar</packaging>
+
+   <name>mancala</name>
+   <url>http://maven.apache.org</url>
+
+   <properties>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+   </properties>
+
+
+</project>
